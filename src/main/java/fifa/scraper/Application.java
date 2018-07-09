@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.scholastic.ecms.logging.poc.api", "com.scholastic.ecms.logging.poc.server3"})
+@ComponentScan(basePackages = {"fifa.scraper"})
 public class Application extends ApplicationTemplate {
 
     public static void main(String[] args){

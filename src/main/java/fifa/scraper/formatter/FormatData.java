@@ -1,6 +1,6 @@
-package fifa.scraper;
+package fifa.scraper.formatter;
 
-import com.scholastic.ecms.logging.poc.api.service.AuditContextService;
+import fifa.scraper.data.FifaData;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.jsoup.nodes.Element;
@@ -16,8 +16,6 @@ public class FormatData {
 
     private static final Logger LOG = LogManager.getLogger(FormatData.class);
 
-    @Autowired
-    private AuditContextService contextManagerService;
 
     @Autowired
     private FifaData fifaData;
@@ -66,7 +64,7 @@ public class FormatData {
 
         for (int i = 0; i < scoreList.size(); i++) {
             teamsAndScores.add(teamList.get(teamCounter) + " vs. " +
-                    teamList.get(teamCounter + 1));
+                    teamList.get(teamCounter + 1)+ ": " + scoreList.get(i));
 
             teamCounter = teamCounter + 2;
         }

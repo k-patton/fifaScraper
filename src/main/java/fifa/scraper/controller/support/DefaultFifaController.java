@@ -1,8 +1,10 @@
-package fifa.scraper;
+package fifa.scraper.controller.support;
 
 
 
 
+import fifa.scraper.controller.FifaController;
+import fifa.scraper.formatter.FormatData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

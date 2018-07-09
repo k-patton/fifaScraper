@@ -1,5 +1,6 @@
 package fifa.scraper;
 
+import fifa.scraper.data.FifaData;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.jsoup.nodes.Element;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-@ComponentScan("com.scholastic.ecms.logging.poc.server3")
+@ComponentScan("fifa.scraper")
 public class formatTest implements CommandLineRunner {
 
     @Autowired
