@@ -63,6 +63,8 @@ public class FormatData {
 
 
         for (int i = 0; i < scoreList.size(); i++) {
+            System.out.println(teamList.get(teamCounter) + " vs. " +
+                    teamList.get(teamCounter + 1) + ": " + scoreList.get(i));
             teamsAndScores.add(teamList.get(teamCounter) + " vs. " +
                     teamList.get(teamCounter + 1)+ ": " + scoreList.get(i));
 
@@ -71,6 +73,7 @@ public class FormatData {
     }
 
     public List<String> getResults() {
+        System.out.println("The scores of the 2018 Fifa World Cup are as follows: ");
         formatData();
         LOG.debug("log FormatData/getResults");
         return teamsAndScores;
